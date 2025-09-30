@@ -83,7 +83,6 @@ Here we elaborate on how to load the necessary data, configure prosgnerf for you
    4. [Camera Calibration Files](http://www.cvlibs.net/download.php?file=data_tracking_calib.zip)
    5. [Training labels](http://www.cvlibs.net/download.php?file=data_tracking_label_2.zip)
 2. Extract everything to ```./data/kitti``` and keep the data structure
-3. Neural Scene Graphs is well tested and published on real front-facing scenarios with only small movements along the camera viewing direction. We therefore prepared selected config files for KITTI Scenes (0001, 0002, 0006)
 
 #### Virtual KITTI 2
 
