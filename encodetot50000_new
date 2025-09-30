@@ -1,0 +1,46 @@
+/home/lsy/miniconda3/envs/nsg/lib/python3.10/site-packages/torchvision/transforms/functional.py:1603: UserWarning: The default value of the antialias parameter of all the resizing transforms (Resize(), RandomResizedCrop(), etc.) will change from None to True in v0.17, in order to be consistent across the PIL and Tensor backends. To suppress this warning, directly pass antialias=True (recommended, future default), antialias=None (current default, which means False for Tensors and True for PIL), or antialias=False (only works on Tensors - PIL will still use antialiasing). This also applies if you are using the inference transforms from the models weights: update the call to weights.transforms(antialias=True).
+  warnings.warn(
+Removing not moving objects
+obj 2 moved 23.62777225277873 meters in selected frames
+obj 3 moved 40.46666226882396 meters in selected frames
+obj 7 moved 15.680186548565697 meters in selected frames
+obj 8 moved 30.246636033993113 meters in selected frames
+obj 4 moved 54.88172427558998 meters in selected frames
+obj 9 moved 58.08528586751392 meters in selected frames
+obj 5 moved 34.59232582999871 meters in selected frames
+obj 12 moved 10.614248511511057 meters in selected frames
+obj 6 moved 24.485274410918187 meters in selected frames
+obj 10 moved 19.58744259344896 meters in selected frames
+progressive params are t=30.000000m, rot=30.000000 degree
+
+number of frames in each small scene [56]
+scaling...
+getting mask, depth, masked patch...
+skip frame 68, obj 9 when extracting patches
+skip frame 338, obj 9 when extracting patches
+remove objs with no good 2D mask
+removed cam2, frame 68, obj 4.
+removed cam2, frame 68, obj 9.
+removed cam3, frame 68(338), obj 4.
+removed cam3, frame 68(338), obj 9.
+i_train: [  1   2   3   4   6   7   8   9  11  12  13  14  16  17  18  19  21  22
+  23  24  26  27  28  29  31  32  33  34  36  37  38  39  41  42  43  44
+  46  47  48  49  51  52  53  54  57  58  59  60  62  63  64  65  67  68
+  69  70  72  73  74  75  77  78  79  80  82  83  84  85  87  88  89  90
+  92  93  94  95  97  98  99 100 102 103 104 105 107 108 109 110]
+i_test: [  0   5  10  15  20  25  30  35  40  45  50  55  56  61  66  71  76  81
+  86  91  96 101 106 111]
+creating train indices and shuffling...
+Initialized kitti tracking dataset
+Loading ckpt from ./weights/tot50000/epoch050_iter125101.tar
+Loading progressive split 0
+Traceback (most recent call last):
+  File "/home/lsy/nsg_oct/train.py", line 1390, in <module>
+    train(args, device)
+  File "/home/lsy/nsg_oct/train.py", line 1024, in train
+    kwargs_all, start, start_epoch = create_nerf(
+  File "/home/lsy/nsg_oct/train.py", line 195, in create_nerf
+    kwargs_all[i]['optimizer'].load_state_dict(ckpt[i]['optimizer_state_dict'])
+  File "/home/lsy/miniconda3/envs/nsg/lib/python3.10/site-packages/torch/optim/optimizer.py", line 390, in load_state_dict
+    raise ValueError("loaded state dict contains a parameter group "
+ValueError: loaded state dict contains a parameter group that doesn't match the size of optimizer's group
