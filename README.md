@@ -2,9 +2,9 @@
 
 <p align="center">
 
-  <h1 align="center">ProSGNeRF: Progressive Dynamic Neural Scene Graph with Frequency Modulated Auto-Encoder in Urban Scenes
+  <h1 align="center">ProSGNeRF: Progressive Dynamic Neural Scene Graph with Frequency Modulated Foundation Model in Urban Scenes
 </h1>
-  <h3 align="center">TNNLS Submission</h3>
+  <h3 align="center">IJCV Submission</h3>
   <div align="center"></div>
 </p>
 
